@@ -1,5 +1,5 @@
 {% set name = "tytanic" %}
-{% set version = "0.2.2" %}
+{% set version = "0.3.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/tingerrr/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 47791c8a574ccadbb8c30a96964c047c4015cb8b5d62bef64ba069f60ab649a1
+  sha256: 81077d3157681aba99816ebb54732ca005bbc7de151e8a1cce09281cfed5497e
 
 build:
   number: 0
