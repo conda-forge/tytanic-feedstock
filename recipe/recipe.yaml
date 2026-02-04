@@ -1,0 +1,45 @@
+schema_version: 1
+
+context:
+  name: tytanic
+  version: 0.2.2
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://github.com/tingerrr/${{ name }}/archive/v${{ version }}.tar.gz
+  sha256: 47791c8a574ccadbb8c30a96964c047c4015cb8b5d62bef64ba069f60ab649a1
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - ${{ compiler('c') }}
+    - ${{ stdlib("c") }}
+    - ${{ compiler('rust') }}
+    - cargo-bundle-licenses
+  host:
+    - if: linux
+      then: openssl
+  run:
+    - if: linux
+      then: openssl
+
+tests:
+  - script:
+      - tt --version
+
+about:
+  summary: A visual regression test runner for typst packages.
+  license: MIT
+  license_file:
+    - LICENSE
+    - THIRDPARTY_LICENSES.yaml
+  homepage: https://github.com/tingerrr/tytanic
+
+extra:
+  recipe-maintainers:
+    - freundTech
