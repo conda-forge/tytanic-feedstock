@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: tytanic
-  version: 0.2.2
+  version: 0.3.0
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://github.com/tingerrr/${{ name }}/archive/v${{ version }}.tar.gz
-  sha256: 47791c8a574ccadbb8c30a96964c047c4015cb8b5d62bef64ba069f60ab649a1
+  sha256: 3cdce856fbe5e6b856214fe55c0f7714340a66ead0979b742c6b0a3d212bb9a5
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
@@ -34,9 +34,10 @@ tests:
 
 about:
   summary: A visual regression test runner for typst packages.
-  license: MIT
+  license: MIT or Apache-2.0
   license_file:
-    - LICENSE
+    - LICENSE.MIT
+    - LICENSE.Apache-2.0
     - THIRDPARTY_LICENSES.yaml
   homepage: https://github.com/tingerrr/tytanic
 
