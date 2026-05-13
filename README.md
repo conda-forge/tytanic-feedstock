@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tytanic-feedsto
 
 Home: https://github.com/tingerrr/tytanic
 
-Package license: MIT
+Package license: MIT or Apache-2.0
 
 Summary: A visual regression test runner for typst packages.
 
