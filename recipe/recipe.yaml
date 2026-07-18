@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: tytanic
-  version: "0.4.0"
+  version: "0.4.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/tingerrr/${{ name }}/archive/v${{ version }}.tar.gz
-  sha256: 098b831096e0a2e1619a5384e4d7f17ab7fe0327555293793b686fd783b5b7dd
+  sha256: 9acdf96fba301efb4b92cf5b67f6a2b454315aaf3aea79c0a68a13644b2881a8
 
 build:
   number: 0
