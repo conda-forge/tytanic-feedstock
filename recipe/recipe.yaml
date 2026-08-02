@@ -17,11 +17,11 @@ build:
 
 requirements:
   build:
+    - ${{ stdlib('c') }}
     - ${{ compiler('c') }}
-    - ${{ stdlib("c") }}
     - ${{ compiler('rust') }}
     - cargo-bundle-licenses
-  host:
+    - cargo-auditable
     - if: linux
       then: openssl
   run:
