@@ -3,11 +3,18 @@ About tytanic-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tytanic-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/tingerrr/tytanic
+Home: https://typst-community.github.io/tytanic/
 
 Package license: MIT or Apache-2.0
 
-Summary: A visual regression test runner for typst packages.
+Summary: Visual regression test runner for Typst packages.
+
+Development: https://github.com/tingerrr/tytanic
+
+Documentation: https://typst-community.github.io/tytanic/
+
+Tytanic is a test runner for Typst projects. It helps you worry less about
+regressions and speeds up your development.
 
 Current build status
 ====================
