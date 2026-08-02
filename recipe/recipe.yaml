@@ -22,6 +22,7 @@ requirements:
     - ${{ compiler('rust') }}
     - cargo-bundle-licenses
     - cargo-auditable
+  host:
     - if: linux
       then: openssl
   run:
