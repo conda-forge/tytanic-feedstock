@@ -13,14 +13,15 @@ source:
   sha256: 9acdf96fba301efb4b92cf5b67f6a2b454315aaf3aea79c0a68a13644b2881a8
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
+    - ${{ stdlib('c') }}
     - ${{ compiler('c') }}
-    - ${{ stdlib("c") }}
     - ${{ compiler('rust') }}
     - cargo-bundle-licenses
+    - cargo-auditable
   host:
     - if: linux
       then: openssl
@@ -33,13 +34,18 @@ tests:
       - tt --version
 
 about:
-  summary: A visual regression test runner for typst packages.
+  summary: Visual regression test runner for Typst packages.
+  description: |
+    Tytanic is a test runner for Typst projects. It helps you worry less about
+    regressions and speeds up your development.
   license: MIT or Apache-2.0
   license_file:
     - LICENSE.MIT
     - LICENSE.Apache-2.0
     - THIRDPARTY_LICENSES.yaml
-  homepage: https://github.com/tingerrr/tytanic
+  homepage: https://typst-community.github.io/tytanic/
+  repository: https://github.com/tingerrr/tytanic
+  documentation: https://typst-community.github.io/tytanic/
 
 extra:
   recipe-maintainers:
